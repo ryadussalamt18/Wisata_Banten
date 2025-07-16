@@ -1,4 +1,4 @@
-# Website Sistem Pakar Rekomendasi Wisata Banten (Metode SAW)
+#  Sistem Pakar Rekomendasi Tempat Wisata – Metode SAW
 
 Aplikasi web berbasis **PHP** dan **MySQL** yang digunakan untuk memberikan **rekomendasi tempat wisata di Banten** menggunakan metode **Simple Additive Weighting (SAW)**. Sistem ini menilai dan mengurutkan lokasi wisata berdasarkan berbagai kriteria untuk membantu pengguna memilih destinasi terbaik.
 
