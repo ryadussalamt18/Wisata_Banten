@@ -4,7 +4,7 @@ include 'config.php';
 
 if (isset($_POST['register'])) {
     $username = trim($_POST['username']);
-    $password = trim($_POST['password']); // plaintext
+    $password = trim($_POST['password']); 
     $nama     = trim($_POST['nama_lengkap']);
     $email    = trim($_POST['email']);
     $no_hp    = trim($_POST['no_hp']);
