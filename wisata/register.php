@@ -9,16 +9,15 @@ if (isset($_POST['register'])) {
     $email    = trim($_POST['email']);
     $no_hp    = trim($_POST['no_hp']);
 
-    // Cek apakah ada yang kosong
     if ($username == '' || $password == '' || $nama == '' || $email == '' || $no_hp == '') {
         $error = "Semua field harus diisi!";
     } else {
-        // Cek apakah username sudah ada
+   
         $cek = $conn->query("SELECT * FROM user WHERE username='$username'");
         if ($cek->num_rows > 0) {
             $error = "Username sudah terdaftar!";
         } else {
-            // Simpan ke database
+        
             $stmt = $conn->prepare("INSERT INTO user (username, pass, nama_lengkap, email, no_hp) VALUES (?, ?, ?, ?, ?)");
             $stmt->bind_param("sssss", $username, $password, $nama, $email, $no_hp);
 
